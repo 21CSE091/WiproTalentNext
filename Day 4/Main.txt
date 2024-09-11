@@ -1,0 +1,24 @@
+import java.util.*;
+class box{
+    private int height;
+    private int width;
+    private int depth;
+    public box(int height,int width,int depth){
+        this.height = height;
+        this.width = width;
+        this.depth = depth;
+    }
+    public void volume(){
+        System.out.print(height*width*depth);
+    }
+}
+class Main{
+    public static void main(String [] args){
+        Scanner obj = new Scanner(System.in);
+        int height = obj.nextInt();
+        int width = obj.nextInt();
+        int depth = obj.nextInt();
+        box b = new box(height,width,depth);
+        b.volume();
+    }
+}
