@@ -1,0 +1,32 @@
+class Animal{
+    public void sleep(){
+        System.out.println("Animal is sleeping");
+    }
+    public void eat(){
+        System.out.println("Animal is eating");   
+    }
+}
+class Bird extends Animal{
+    @Override 
+    public void sleep(){
+        System.out.println("Bird is sleeping");        
+    }
+    @Override 
+    public void eat(){
+        System.out.println("Bird is eating");
+    }
+    public void fly(){
+        System.out.println("Bird is flying");       
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        Animal animal= new Animal();
+        animal.eat();
+        animal.sleep();
+        Bird bird= new Bird();
+        bird.eat();
+        bird.sleep();
+        bird.fly();
+    }
+}
